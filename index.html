@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050b1b">
+  <meta name="description" content="SridharNova Technologies is launching soon. Modern digital experiences and innovative technology solutions for businesses.">
+  <title>Launching Soon | SridharNova Technologies</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #050b1b;
+      --muted: #b7c8e2;
+      --blue: #168cff;
+      --cyan: #00d5ff;
+      --line: rgba(67, 153, 255, .35);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: #f7faff;
+      background:
+        radial-gradient(ellipse at 78% 0%, rgba(0, 104, 210, .28), transparent 36rem),
+        radial-gradient(ellipse at 0% 85%, rgba(0, 78, 255, .18), transparent 30rem),
+        var(--bg);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      overflow-x: hidden;
+    }
+    a { color: inherit; }
+    .site-shell { width: min(1180px, calc(100% - 48px)); margin: 0 auto; position: relative; z-index: 1; }
+    header {
+      min-height: 104px; display: flex; align-items: center; justify-content: space-between;
+      gap: 24px; border-bottom: 1px solid rgba(157, 190, 255, .09);
+    }
+    .brand { display: inline-flex; align-items: center; gap: 13px; text-decoration: none; }
+    .brand-mark {
+      width: 45px; height: 52px; display: grid; place-items: center;
+      font-weight: 900; font-size: 42px; line-height: 1; font-style: italic;
+      color: transparent; background: linear-gradient(145deg, #00e0ff, #0878ff 70%);
+      background-clip: text; -webkit-background-clip: text;
+      filter: drop-shadow(0 0 16px rgba(0, 155, 255, .25));
+    }
+    .brand-name { font-size: 23px; font-weight: 750; letter-spacing: -.7px; }
+    .brand-sub { display: block; margin-top: 3px; font-size: 10px; letter-spacing: 4px; text-align: center; color: #c7d8f1; }
+    .header-note { color: #bed1ed; font-size: 13px; display: flex; align-items: center; gap: 12px; }
+    .header-note span { color: #168cff; }
+    main { text-align: center; padding: 58px 0 0; }
+    .eyebrow {
+      color: #b8d4ff; font-size: 13px; letter-spacing: 4px; font-weight: 700;
+      text-transform: uppercase; margin: 0 0 15px;
+    }
+    h1 { margin: 0; font-size: clamp(42px, 7.5vw, 82px); line-height: 1.02; letter-spacing: -4px; font-weight: 780; }
+    h1 span {
+      color: transparent; background: linear-gradient(100deg, #42baff, #087dff 65%, #00d5ff);
+      -webkit-background-clip: text; background-clip: text;
+    }
+    .intro { max-width: 610px; margin: 24px auto 0; color: var(--muted); font-size: clamp(15px, 1.6vw, 18px); line-height: 1.8; }
+    .countdown { display: flex; justify-content: center; gap: 16px; margin: 36px auto 0; }
+    .time-card {
+      width: 132px; min-height: 104px; border: 1px solid var(--line); border-radius: 18px;
+      background: linear-gradient(150deg, rgba(11, 27, 58, .82), rgba(5, 12, 31, .62));
+      display: flex; flex-direction: column; justify-content: center; gap: 7px;
+      box-shadow: inset 0 1px rgba(255,255,255,.035);
+    }
+    .time-value { font-size: 36px; font-weight: 750; font-variant-numeric: tabular-nums; letter-spacing: -1px; }
+    .time-label { color: #b5d2ff; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; }
+    .notify { width: min(560px, 100%); margin: 30px auto 0; }
+    .notify-form {
+      display: flex; padding: 4px; border: 1px solid rgba(151, 190, 255, .8);
+      border-radius: 999px; background: rgba(4, 12, 30, .75); gap: 4px;
+    }
+    .notify-form input {
+      flex: 1; min-width: 0; padding: 13px 17px; border: 0; outline: 0;
+      color: white; background: transparent; font: inherit; font-size: 14px;
+    }
+    .notify-form input::placeholder { color: #a9bdd9; }
+    .notify-form button {
+      border: 0; border-radius: 999px; padding: 0 24px; min-height: 46px;
+      color: white; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer;
+      background: linear-gradient(105deg, #00bce9, #2362ff); transition: transform .2s, filter .2s;
+      white-space: nowrap;
+    }
+    .notify-form button:hover { transform: translateY(-1px); filter: brightness(1.12); }
+    .form-note { min-height: 22px; margin: 11px 0 0; color: #afc5e3; font-size: 12px; }
+    .services { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; margin: 57px auto 0; max-width: 1000px; }
+    .service { padding: 0 10px; }
+    .service-icon {
+      width: 38px; height: 38px; margin: 0 auto 12px; color: var(--cyan);
+      display: grid; place-items: center;
+    }
+    .service-icon svg { width: 30px; height: 30px; stroke: currentColor; fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+    .service h2 { font-size: 15px; margin: 0 0 9px; font-weight: 650; }
+    .service p { color: #b4c6df; font-size: 12px; line-height: 1.7; margin: 0 auto; max-width: 190px; }
+    footer {
+      padding: 38px 0 22px; display: flex; align-items: center; justify-content: center; gap: 24px;
+      color: #a9bbd4; font-size: 11px; text-align: center;
+    }
+    .socials { display: flex; gap: 13px; align-items: center; }
+    .socials a { display: inline-flex; opacity: .85; text-decoration: none; }
+    .socials a:hover { opacity: 1; color: #36bfff; }
+    .socials svg { width: 17px; height: 17px; fill: currentColor; }
+    .ambient {
+      position: fixed; z-index: 0; pointer-events: none; width: 46vw; height: 30vw;
+      bottom: -22vw; border-radius: 50%; filter: blur(2px); opacity: .6;
+      border-top: 1px solid rgba(0, 185, 255, .9);
+      box-shadow: 0 -10px 50px rgba(0, 102, 255, .16), inset 0 18px 60px rgba(0, 77, 255, .12);
+    }
+    .ambient.left { left: -17vw; transform: rotate(24deg); background: linear-gradient(15deg, transparent, rgba(0, 91, 255, .15)); }
+    .ambient.right { right: -17vw; transform: rotate(-24deg); border-color: rgba(129, 67, 255, .9); background: linear-gradient(-15deg, transparent, rgba(89, 47, 255, .16)); }
+    @media (max-width: 700px) {
+      .site-shell { width: min(100% - 32px, 560px); }
+      header { min-height: 86px; }
+      .brand-mark { width: 36px; font-size: 36px; }
+      .brand-name { font-size: 19px; }
+      .brand-sub { font-size: 8px; letter-spacing: 3px; }
+      .header-note { display: none; }
+      main { padding-top: 56px; }
+      h1 { letter-spacing: -2.3px; }
+      .eyebrow { font-size: 11px; letter-spacing: 3px; }
+      .intro { line-height: 1.7; }
+      .countdown { gap: 8px; margin-top: 28px; }
+      .time-card { width: calc(25% - 6px); min-height: 82px; border-radius: 13px; }
+      .time-value { font-size: clamp(23px, 6vw, 31px); }
+      .time-label { font-size: 8px; letter-spacing: 1px; }
+      .notify { margin-top: 25px; }
+      .notify-form { border-radius: 18px; flex-direction: column; padding: 7px; }
+      .notify-form input { min-height: 44px; padding: 10px 13px; }
+      .notify-form button { min-height: 46px; }
+      .services { grid-template-columns: repeat(2, 1fr); gap: 28px 16px; margin-top: 44px; }
+      .service h2 { font-size: 14px; }
+      footer { flex-direction: column; gap: 14px; padding-top: 32px; }
+      .ambient { width: 75vw; height: 48vw; bottom: -35vw; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="ambient left" aria-hidden="true"></div>
+  <div class="ambient right" aria-hidden="true"></div>
+
+  <div class="site-shell">
+    <header>
+      <img src="logo/logo_trans_white.png" height="100px"/>
+      <div class="header-note">Innovative Solutions <span>•</span> Modern Technology <span>•</span> Lasting Impact</div>
+    </header>
+
+    <main>
+      <p class="eyebrow">Our new website is</p>
+      <h1>Launching <span>Soon.</span></h1>
+      <p class="intro">
+        We’re building something amazing. SridharNova Technologies is on a mission
+        to create modern digital experiences and innovative solutions for businesses around the world.
+      </p>
+
+      <section class="notify" aria-label="Launch notification">
+        <form class="notify-form" id="notify-form">
+          <input id="email" type="email" name="email" placeholder="Enter your email address" aria-label="Your email address" autocomplete="email" required>
+          <button type="submit">Notify Me <span aria-hidden="true">→</span></button>
+        </form>
+      </section>
+
+      <section class="services" aria-label="Our services">
+        <article class="service">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 4l-4 16"/></svg></div>
+          <h2>Web Development</h2><p>Fast, scalable and modern web applications</p>
+        </article>
+        <article class="service">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 18H5a4 4 0 0 1-.4-8A7 7 0 0 1 18 8a5 5 0 0 1 1 10Z"/></svg></div>
+          <h2>Cloud Solutions</h2><p>Secure and reliable infrastructure</p>
+        </article>
+        <article class="service">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="m19.4 15 .1.1 1.4 1.1-1.4 2.4-1.7-.7a8 8 0 0 1-1.6.9l-.3 1.8h-2.8l-.3-1.8a8 8 0 0 1-1.6-.9l-1.7.7-1.4-2.4 1.4-1.1a7 7 0 0 1 0-1.9l-1.4-1.1 1.4-2.4 1.7.7a8 8 0 0 1 1.6-.9l.3-1.8h2.8l.3 1.8a8 8 0 0 1 1.6.9l1.7-.7 1.4 2.4-1.4 1.1a7 7 0 0 1-.1 1.8Z" transform="translate(-1 -1) scale(1.08)"/></svg></div>
+          <h2>Custom Software</h2><p>Tailored solutions for your business</p>
+        </article>
+        <article class="service">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 17 6-6 4 3 7-8"/><path d="M14 6h6v6"/></svg></div>
+          <h2>Digital Transformation</h2><p>Turning ideas into real-world impact</p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span id="year"></span> SridharNova Technologies. All rights reserved.</span>
+      <nav class="socials" aria-label="Contact links">
+        <!-- Replace these placeholders with your real company profile URLs and email. -->
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM8 18H5V9h3v9ZM6.5 7.8A1.75 1.75 0 1 1 6.5 4.3a1.75 1.75 0 0 1 0 3.5ZM19 18h-3v-4.4c0-1.05-.02-2.4-1.47-2.4-1.47 0-1.7 1.14-1.7 2.32V18h-3V9h2.88v1.23h.04a3.16 3.16 0 0 1 2.84-1.56C18.63 8.67 19 10.6 19 13.1V18Z"/></svg></a>
+        <a href="mailto:info@sridharnova.com" aria-label="Email us"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/></svg></a>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>
